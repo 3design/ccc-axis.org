@@ -271,3 +271,54 @@ h1.chinese-layout h1 {
 {
   background: rgba(255, 255, 255, 0.5);
 }
+/**
+*** May 25 2020
+*** This section is to add a report button and document to the temp website
+**/
+.menu-button {
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(60,60,60);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu-button:hover,
+.menu-button:focus {
+  background-color: rgb(100,100,100);
+}
+.hide {
+  display: none;
+}
+.nav-list {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    z-index: 2;
+    color: #343434;
+    text-shadow: none;
+    list-style: none;
+    border: 2px solid rgb(100,100,100)
+
+}
+.nav-list li {
+  margin-left: 0;
+}
+.nav-list li a {
+text-decoration: none;
+  padding: 15px 20px;
+  background: #fff;
+  display: block;
+  color: #343434;
+}
+.nav-list li a:hover,
+.nav-list li a:focus {
+  background-color: rgb(200,200,200);
+  transition: all 0.3s ease-in-out;
+}

@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
 <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
 <meta charset="utf-8">
 <title>Canada Cuba China Collaberation</title>
@@ -12,7 +13,10 @@
 <body>
 <div id="main-wrapper">
   <div class="close">x</div>
-
+  <button id="showmenu" class="menu-button">Reports</button>
+  <ul id="menu" class="nav-list hide">
+    <li class="nav-item"><a href="documents/CCC_Progress_Report_for_HBHL.pdf">Progress Report March 2020 (pdf)</a></li>
+  </ul>
   <section class="box spanish">
     <div class="overlay">
       <div class="box-content">
@@ -163,5 +167,15 @@ $('.close').click(function () {
   $('.box').removeClass('clicked');
 });
 
+</script>
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
 </script>
 </body></html>
